@@ -23,57 +23,65 @@ function getComputerChoice() {
             return("paper")
         }
 }
-getComputerChoice();
 //let's test getComputerChoice now
 
 
 
 function playRound(playerSelection, computerSelection) {
-  // your code here!
-//   playerSelection = playerSelection.toLowerCase();
+//   your code here!
+  var playerSelection = window.prompt("enter your input for scissors paper rock");
+  playerSelection = playerSelection.toLowerCase();
+  console.log("playerSelection is");
+  console.log(playerSelection);
+  console.log("computerSelection is");
+  console.log(computerSelection);
 //   computerSelection = computerSelection.toLowerCase();
 
-    // if (playerSelection = "scissors") {
-    //     if (computerSelection = "scissors") {
-    //         return("it's a tie!");
-    //     }
+    if (playerSelection == "scissors") {
+        if (computerSelection == "scissors") {
+            return("it's a tie!");
+        }
+        
+        else if (computerSelection == "paper") {
+            return("you win!");
+        }
 
-    //     else if (computerSelection = "paper") {
-    //         return("you win!");
-    //     }
+        else if (computerSelection == "rock") {
+            return("you lose!");
+        }
+    }
 
-    //     else if (computerSelection = "rock") {
-    //         return("you lose!");
-    //     }
-    // }
+    else if (playerSelection == "paper") {
+        if (computerSelection == "scissors") {
+            return("you lose");
+        }
+        
+        else if (computerSelection == "paper") {
+            return("tie Yamcha!");
+        }
 
-    // else if (playerSelection = "paper") {
-    //     if (computerSelection = "scissors") {
-    //         return("you lose!");
-    //     }
+        else if (computerSelection == "rock") {
+            return("you win");
+        }
+    }
 
-    //     else if (computerSelection = "paper") {
-    //         return("it's a tie!");
-    //     }
+    else if (playerSelection == "rock") {
+        if (computerSelection == "scissors") {
+            return("you win");
+        }
+        
+        else if (computerSelection == "paper") {
+            return("you lose");
+        }
 
-    //     else if (computerSelection = "rock") {
-    //         return("you win!");
-    //     }
-    // }
+        else if (computerSelection == "rock") {
+            return("its a tie");
+        }
+    }
 
-    // else if (playerSelection = "rock") {
-    //     if (computerSelection = "scissors") {
-    //         return("you win!");
-    //     }
-
-    //     else if (computerSelection = "paper") {
-    //         return("you lose!");
-    //     }
-
-    //     else if (computerSelection = "rock") {
-    //         return("it's a tie!");
-    //     }
-    // }
+    else {
+        return("type a proper weapon dumbass");
+    }
 }
  
 const playerSelection = "rock";
