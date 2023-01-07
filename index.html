@@ -47,7 +47,7 @@ function playRound(playerSelection, computerSelection) {
         }
 
         else if (computerSelection == "rock") {
-            return("you lose!");
+            return("gyou lose!");
         }
     }
 
@@ -87,6 +87,23 @@ function playRound(playerSelection, computerSelection) {
 const playerSelection = "rock";
 const computerSelection = getComputerChoice();
 console.log(playRound(playerSelection, computerSelection));
+
+// now we will create a function called game()
+// this function will call the playRound function 5 times
+// this function will also keep count of how many times the player wins against the computer
+// because there are 5 games, we will always have a clear winner
+const i = 0;
+function game() {
+    var i = 0;
+    var playWin = 0;
+    while (i < 5) {
+        playRound(playerSelection, computerSelection);
+        i++;
+    }
+    
+}
+
+game();
     </script>
 </body>
 </html>
