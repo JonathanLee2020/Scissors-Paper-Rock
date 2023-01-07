@@ -8,13 +8,27 @@
 </head>
 <body>
     <script>
-        var i = 0;
-        while (i < 5) {
-            console.log("this is the "); 
-            console.log(i); 
-            console.log("th time we have looped");
-            i++;
+        function multiply25() {
+            var input = window.prompt("enter your input");
+                console.log(input);
+                result = input * 25;
+                return result;
         }
+        
+        // console.log(result);
+        multiply25();
+        console.log("let's see if result is still defined or not");
+        
+        if (result > 100) {
+            console.log("it's over 9000");
+        }
+
+        else {
+            console.log("not that big");
+        }
+        // perfect = result * 4;
+        // console.log(perfect);
+
     </script>
 </body>
 </html>

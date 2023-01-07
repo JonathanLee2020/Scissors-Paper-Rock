@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+var input;
+function test(input) {
+    var playerSelection = window.prompt("enter your input for scissors paper rock");
+    playerSelection = playerSelection.toLowerCase();
+    if (playerSelection == "scissors") {
+        result = (1);
+    }
+
+    else {
+        result = (2);
+    }
+    return result;
+}
+
+console.log("let's try this shit now");
+
+test(input);
+
+
+//here is where we create our 5 test function
+function multiTest() {
+    //enter code below
+    var i = 0;
+    while (i < 5) {
+        test(input);
+
+        if (result == 1) {
+            console.log("test complete");
+        }
+
+        else {
+            console.log("fck in geralt voice");
+        }
+        i++;
+    }
+    //enter code above
+}
+
+console.log("here is where the fun begins");
+multiTest();
+
+
+
+
+// if (result == 1) {
+//     console.log("test complete");
+// }
+
+// else {
+//     console.log("fck in geralt voice");
+// }
+</script>
+</body>
+</html>
